@@ -1,14 +1,5 @@
 def starts_with_a_vowel?(word)
-  vowel_array =[]
-  consonant_array =[]
-
-  vowel_array  << word.scan(/\w+[aeiou]/)
-  if vowel_array!=[]
-      return true
-   elsif
-     consonant_array<<word.scan(/\w+[bcdfghj-np-tvwxz]/)
-     consonant_array!=[]
-      return false
+  word.match(/\A[aeiouAEIOU]/)
 end
 end
 
@@ -33,5 +24,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-phone.match(/\d{10})?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/)#["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+phone.match(/\d{10})?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/)
 end
