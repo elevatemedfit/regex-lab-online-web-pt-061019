@@ -1,7 +1,13 @@
 def starts_with_a_vowel?(word)
-   if word.match(/\w+[aeiou]/)
+  vowel_array =[]
+  consonant_array =[]
+
+  vowel_array  << word.scan(/\w+[aeiou]/)
+  if vowel_array!=[]
       return true
-   else
+   elsif
+     consonant_array<<word.scan(/\w+[bcdfghj-np-tvwxz]/)
+     consonant_array!=[]
       return false
 end
 end
