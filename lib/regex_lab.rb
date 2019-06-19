@@ -18,9 +18,7 @@ end
 
 
 def words_starting_with_un_and_ending_with_ing(text)
-  nuarray = []
-nuarray << text.count.scan(/\w+[un][ing]/)
-nuarray
+text.scan(/\w+[un][ing]/).length
 end
 
 
