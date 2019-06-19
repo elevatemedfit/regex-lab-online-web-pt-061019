@@ -1,10 +1,5 @@
 def starts_with_a_vowel?(word)
-   if word.split.match(/\w+[aeiou]/)
-     puts true
-   elsif word.split.match(/\w+[b-df-hj-np-tv-xz]/)
-     puts false
-
-  end
+   
 end
 
 
